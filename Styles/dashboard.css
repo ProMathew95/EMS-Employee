@@ -1,0 +1,160 @@
+.bg-light{
+    direction: rtl;
+    background-color: rgb(65, 167, 226) !important;
+}
+
+.svg-inline--fa.fa-w-10,
+.svg-inline--fa.fa-w-16,
+.svg-inline--fa.fa-w-14,
+.svg-inline--fa.fa-w-18
+{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.svg-inline--fa.fa-w-16{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.user-section{
+    margin-bottom: 70px;
+    padding-top: 20px;
+}
+.emp-info
+{
+    background-color: rgb(65, 167, 226) !important;
+    margin-top: 1px;
+    color: #fff;
+    padding-bottom: 20px;
+    min-height: 582px;
+    height: 100%;
+    
+}
+
+.emp-img img
+{
+    width: 80px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-top: 10px;
+}
+
+.emp-detail h6{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.emp-detail p {
+    font-size: 14px;
+    margin-left: -8px;
+}
+
+.emp-detail p span{
+    display: inline-block;
+}
+.online-mark{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
+p.Online{
+    margin-left: 2px;
+}
+.edit-date{
+    margin-left: 12px;
+}
+.edit-time{
+    margin-left: -10px;
+}
+.edit-online{
+    margin-left: 19px;
+}
+
+.mt-3 a{
+    width: 60%;
+    display: inline-block;
+}
+.dash
+{
+    
+    border: 1px solid #666;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 9px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 1px #666,
+                -1px -1px 1px #666;
+}
+.dash:hover
+,.active{
+    cursor: pointer;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 1px #fff,
+    -1px -1px 1px #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.dash a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.dashboard-details {
+    padding-top: 40px;
+}
+.dashboard-details .row>div{
+    margin-bottom: 30px;
+}
+
+.dashboard-details img
+{
+    width: 130px;
+    height:100px;
+}
+.dashboard-details .btn{
+    outline: 0;
+    background-color: rgb(65, 167, 226);
+    border-color:rgb(65, 167, 226) ;
+}
+.dashboard-details .btn:hover
+{
+    background-color: rgb(65, 167, 226);
+    border-color:rgb(65, 167, 226) ;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 2px 2px 1px orange,
+                -2px -2px 1px orange;
+}
+/* Edit Media Query */
+
+@media (max-width: 576px) {  
+    .emp-detail h6{
+        font-size: 13px;
+    }
+    .emp-detail p span{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .dash{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  
+}

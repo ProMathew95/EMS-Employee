@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- import FontOsome  -->
+    <link rel="stylesheet" href="../Styles/all.min.css">
+    <!-- import dashboard style -->
+    <link rel="stylesheet" href="../Styles/dashboard.css">   
+     <!--import Attendece Style  -->
+     <link rel="stylesheet" href="../Styles/attendence.css">
+     <!-- import payroll Style -->
+     <link rel="stylesheet" href="../Styles/payroll.css">
+
+    <title>Payroll</title>
+</head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="nav-icons">
+                <i class="fas fa-chevron-right"></i>
+                <i class="far fa-question-circle"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-home"></i>
+            </div>
+            
+        </nav>
+
+        <!-- Dashboard Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Emp Info -->
+                <div class="col-3 emp-info">
+                    <!-- Top user Info -->
+                    <div class="row user-section">
+                        <div class="emp-img col-md-3 ">
+                            <img src="../Images/1.png" alt="userImage" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="emp-detail col-md-9 ">
+                            <h6>Sultan Ahmed</h6>
+                            <p>
+                                <span><i class="far fa-calendar-alt"></i></span>
+                                <span class="edit-date">Registed on Nev, 2019</span>
+                            </p>
+                            <p>
+                                <span><i class="far fa-clock"></i></span>
+                                <span class="edit-time">12/08/20, 3:55 PM</span>
+                            </p>
+                            <p class="Online">
+                                <span class="online-mark"></span>
+                                <span class="edit-online">Online</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="row">
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
+                                <p class="col-10"><a href="Dashboard.html">Dashboard</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
+                                <p class="col-10"><a href="inqury.html">Inquiry</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
+                                <p class="col-10"><a href="request.html">Request</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
+                                <p class="col-10"><a href="setting.html">Setting</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+                  <!-- attendence Details -->
+                  <div class="col-9">
+                      <div class="row">
+                        <div class="col-3"></div>
+                        <div class="attend col-6">
+                            <p class="attend-p text-center font-weight-bold">Payroll Inquiry</p>
+                            <p class="ml-5 font-weight-bold">Month :
+                                <sapn class="text-secondary ml-1">
+                                    <select class="custom-select">
+                                        <option selected>Select...</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="3">April</option>
+                                        <option value="3">May </option>
+                                        <option value="3">June</option>
+                                        <option value="3">July</option>
+                                        <option value="3">August</option>
+                                        <option value="3">September </option>
+                                        <option value="3">October </option>
+                                        <option value="3">November  </option>
+                                        <option value="3">December </option>
+                                      </select>
+                             </span>
+                            </p>
+                            <p class="ml-5 font-weight-bold">Year &nbsp; :  &nbsp;
+                                <sapn class="text-secondary ml-1">
+                                    <select class="custom-select">
+                                        <option selected>Select...</option>
+                                        <option value="1">2001</option>
+                                        <option value="2">2002</option>
+                                        <option value="3">2003</option>
+                                        <option value="3">2004</option>
+                                        <option value="3">2005 </option>
+                                        <option value="3">2006</option>
+                                        <option value="3">2007</option>
+                                        <option value="3">2008</option>
+                                        <option value="3">2009 </option>
+                                        <option value="3">2010 </option>
+                                        <option value="3">2011  </option>
+                                        <option value="3">2012 </option>
+                                      </select>
+                             </span>
+                            </p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <button class="btn font-weight-bold text-center edit-ok mt-4">View</button>
+                                </div>
+                                <div class="col-8">
+                                    <button class="btn font-weight-bold text-center edit-ok mt-4">Clear</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+          <!-- Script For using BootStrap 4 -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+          <!-- FontOsome Iclude -->
+          <script src="../Scripts/all.min.js"></script>
+    </body>
+</html>
