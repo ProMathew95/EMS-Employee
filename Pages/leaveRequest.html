@@ -12,11 +12,10 @@
      <!--import Attendece Style  -->
      <link rel="stylesheet" href="../Styles/attendence.css">
      <link rel="stylesheet" href="../Styles/viewattend.css">
-     <!-- Import DataPicker -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" integrity="sha256-SMGbWcp5wJOVXYlZJyAXqoVWaE/vgFA5xfrH3i/jVw0=" crossorigin="anonymous" />
-    
-
-    <title>View Attendance</title>
+     <!--import PersonInfo Style  -->
+     <link rel="stylesheet" href="../Styles/personInfo.css">
+     <link rel="stylesheet" href="../Styles/leaveRequest.css">
+    <title>Leave Request</title>
 </head>
     <body>
         <!-- Navbar -->
@@ -86,101 +85,98 @@
                     </div>
 
                   </div>
+              
                 <!-- View Attendence -->
                 <div class="col-9 view-attend">
-                   
-                    <div class="row">
-                        <div class="attend col-12">
-                            <p class="attend-p text-center font-weight-bold">Payroll Inquiry</p>
-                           <div class="container mb-5">
-                            <div class="row">
-                                <div class="col-md-4 mt-2">
-                               
-                                    <form action="">
-                                        <label for="from" class="text-primary font-weight-bold">From:</label>
-                                        <input type="date" id="" name="from">
-                                    </form>
-
-                                </div>
-                                <div class="col-md-4 mt-2">
-                                    <form action="">
-                                        <label for="to" class="text-primary font-weight-bold">To:</label>
-                                        <input type="date" id="" name="to">
-                                    </form>
-                                </div>
-                                <div class="col-md-4 mt-2">
-                                    <form action="">
-                                        <label for="to" class="text-primary font-weight-bold">Attendence Status:</label>
-                                        <select name="" id="">
-                                            <option value="" selected>Select</option>
-                                            <option value="">All</option>
-                                            <option value="">OnTime</option>
-                                            <option value="">Late</option>
-                                        </select>
-                                    </form>
-                                </div>
-                               
-                            </div>
-                           
-                           </div>
-                            <div class="container mt-5">
-                                <div class="row">
-                                    <div class="col-6 text-center">
-                                        <button class="btn font-weight-bold text-center edit-ok mt-4">View</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button class="btn font-weight-bold text-center edit-ok mt-4">Clear</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
-                        </div>
-                      
+                    <div class="bg-primary text-center font-weight-bold p-2">
+                        Leave Request History
                     </div>
-                    <!-- Below Table -->
-                    <div class="table-responsive mt-4">
+                    <div class="table-responsive">
                         <table class="table">
-
                             <thead>
-                                <tr class="edit-table-bg">
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Attendence Time</th>
+                                <tr class="bg-second ">
+                                    <th scope="col">Leave Type</th>
+                                    <th scope="col">Request ID</th>
+                                    <th scope="col">Request Date</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Reason Of Leave</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Last Duration(hh:mm)</th>
-                                    <th scope="col">Leave time</th>
-                                    
+                                    <th scope="col">Documeent</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>10-10-2020</td>
-                                    <td>08:00 AM</td>
-                                    <td>On time</td>
-                                    <td>00:00</td>
-                                    <td>05:00 PM</td>
-                                    
+                                    <td>Sick Leave</td>
+                                    <td>123456</td>
+                                    <td>10-12-2019</td>
+                                    <td>12-12-2019</td>
+                                    <td>15-12-2019</td>
+                                    <td>Sickness</td>
+                                    <td>Rejected</td>
+                                    <td class="text-center view-tb mt-2">View
+                                    <td>
                                 </tr>
-                                <tr>
-                                    <td>9-10-2020</td>
-                                    <td>08:15 AM</td>
-                                    <td>late</td>
-                                    <td>00:15</td>
-                                    <td>05:00 PM</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>8-10-2020</td>
-                                    <td>07:50 AM</td>
-                                    <td>On time</td>
-                                    <td>00:00</td>
-                                    <td>05:15 PM</td>
-                                    
-                                </tr>
+                             
                             </tbody>
                         </table>
                     </div>
-
+                    <!-- Second Table -->
+                    <div class="bg-primary text-center font-weight-bold p-2">
+                       New Leave Request Reply
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="bg-second ">
+                                    <th scope="col">Leave Type</th>
+                                    <th scope="col">Request ID</th>
+                                    <th scope="col">Request Date</th>
+                                    <th scope="col">Manger Name</th>
+                                    <th scope="col">Department</th>
+                                    <th scope="col">Reply</th>
+                                    <th scope="col">Reply Date</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sick Leave</td>
+                                    <td>123456</td>
+                                    <td>10-12-2019</td>
+                                    <td>Aymn Ahmed</td>
+                                    <td>Sales</td>
+                                    <td>Approved</td>
+                                    <td>01-02-2020</td>
+                                    <td>
+                                </tr>
+                             
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Mange Reply Details -->
+                    <div class="bg-primary text-center font-weight-bold p-2">
+                        New Leave Request Reply
+                     </div>
+                     <div class="table-responsive">
+                         <table class="table">
+                             <thead>
+                                 <tr class="bg-second ">
+                                     <th scope="col">Manger Name</th>
+                                     <th scope="col">Details</th>
+                                   
+                                    
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr>
+                                     <td>Aymn Ahmed</td>
+                                     <td>No details</td>
+                                 </tr>
+                              
+                             </tbody>
+                         </table>
+                     </div>
                 </div>
             </div>
         </div>

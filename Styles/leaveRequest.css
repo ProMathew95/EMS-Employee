@@ -1,0 +1,14 @@
+.view-attend{
+    padding: 0 !important;
+}
+.bg-primary{
+    background-color: rgb(17 143 216) !important;
+}
+
+.bg-second
+{
+    background-color: #eee;
+}
+.table thead th{
+    border: none;
+}
