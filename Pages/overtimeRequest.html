@@ -15,7 +15,8 @@
      <!--import PersonInfo Style  -->
      <link rel="stylesheet" href="../Styles/personInfo.css">
      <link rel="stylesheet" href="../Styles/leaveRequest.css">
-    <title>Leave Request</title>
+     <link rel="stylesheet" href="../Styles/overtimeRequest.css">
+    <title>Overtime Request</title>
 </head>
     <body>
         <!-- Navbar -->
@@ -88,34 +89,36 @@
               
                 <!-- View Attendence -->
                 <div class="col-9 view-attend">
-                    <div class="bg-primary text-center font-weight-bold p-2">
-                        Leave Request History
-                    </div>
+                  
                     <div class="table-responsive">
-                        <table class="table">
+                        <table class="table edit-tb">
                             <thead>
-                                <tr class="bg-second ">
-                                    <th scope="col">Leave Type</th>
+                                <tr class="bg-primary ">
+                                    <th scope="col">Overtime Type</th>
                                     <th scope="col">Request ID</th>
                                     <th scope="col">Request Date</th>
                                     <th scope="col">Start Date</th>
                                     <th scope="col">End Date</th>
-                                    <th scope="col">Reason Of Leave</th>
+                                    <th scope="col">Start Time</th>
+                                    <th scope="col">End Time</th>
+                                    <th scope="col">Hours</th>
+                                    <th scope="col">Reason Of Overtime</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Documeent</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Sick Leave</td>
+                                    <td>Day Shift</td>
                                     <td>123456</td>
                                     <td>10-12-2019</td>
                                     <td>12-12-2019</td>
                                     <td>15-12-2019</td>
-                                    <td>Sickness</td>
-                                    <td>Rejected</td>
-                                    <td class="text-center view-tb mt-2">View
-                                    <td>
+                                    <td>05:00 PM</td>
+                                    <td>08:00 PM</td>
+                                    <td>9</td>
+                                    <td>Office Work</td>
+                                    <td>Approved</td>
                                 </tr>
                              
                             </tbody>
@@ -123,31 +126,28 @@
                     </div>
                     <!-- Second Table -->
                     <div class="bg-primary text-center font-weight-bold p-2">
-                       New Leave Request Reply
+                       New Overtime Reply Details
                     </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr class="bg-second ">
-                                    <th scope="col">Leave Type</th>
                                     <th scope="col">Request ID</th>
-                                    <th scope="col">Request Date</th>
                                     <th scope="col">Manger Name</th>
                                     <th scope="col">Department</th>
                                     <th scope="col">Reply</th>
                                     <th scope="col">Reply Date</th>
-                                   
+                                    <th scope="col">Details</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Sick Leave</td>
                                     <td>123456</td>
-                                    <td>10-12-2019</td>
-                                    <td>Aymn Ahmed</td>
-                                    <td>Sales</td>
+                                    <td>Khaled Ahmed</td>
                                     <td>Approved</td>
-                                    <td>01-02-2020</td>
+                                    <td>11-05-2016</td>
+                                    <td>Approved</td>
+                                    <td>No Details</td>
                                     <td>
                                 </tr>
                              
@@ -156,7 +156,7 @@
                     </div>
                     <!-- Mange Reply Details -->
                     <div class="bg-primary text-center font-weight-bold p-2">
-                        New Leave Request Reply
+                       Manger Reply Details
                      </div>
                      <div class="table-responsive">
                          <table class="table">
@@ -164,8 +164,6 @@
                                  <tr class="bg-second ">
                                      <th scope="col">Manger Name</th>
                                      <th scope="col">Details</th>
-                                   
-                                    
                                  </tr>
                              </thead>
                              <tbody>

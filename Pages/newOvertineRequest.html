@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- import FontOsome  -->
+    <link rel="stylesheet" href="../Styles/all.min.css">
+    <!-- import dashboard style -->
+    <link rel="stylesheet" href="../Styles/dashboard.css">   
+     <!--import Attendece Style  -->
+     <link rel="stylesheet" href="../Styles/attendence.css">
+    <link rel="stylesheet" href="../Styles/newLeaverequest.css">
+    <link rel="stylesheet" href="../Styles/newOvertimeRequest.css">
+
+    <title>new Overtime Request</title>
+</head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="nav-icons">
+                <i class="fas fa-chevron-right"></i>
+                <i class="far fa-question-circle"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-home"></i>
+            </div>
+            
+        </nav>
+
+        <!-- Dashboard Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Emp Info -->
+                <div class="col-3 emp-info">
+                    <!-- Top user Info -->
+                    <div class="row user-section">
+                        <div class="emp-img col-md-3 ">
+                            <img src="../Images/1.png" alt="userImage" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="emp-detail col-md-9 ">
+                            <h6>Sultan Ahmed</h6>
+                            <p>
+                                <span><i class="far fa-calendar-alt"></i></span>
+                                <span class="edit-date">Registed on Nev, 2019</span>
+                            </p>
+                            <p>
+                                <span><i class="far fa-clock"></i></span>
+                                <span class="edit-time">12/08/20, 3:55 PM</span>
+                            </p>
+                            <p class="Online">
+                                <span class="online-mark"></span>
+                                <span class="edit-online">Online</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="row">
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
+                                <p class="col-10"><a href="Dashboard.html">Dashboard</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
+                                <p class="col-10"><a href="inqury.html">Inquiry</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
+                                <p class="col-10"><a href="request.html">Request</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row">
+                                <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
+                                <p class="col-10"><a href="setting.html">Setting</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+                  <!-- New Leave Request Details -->
+                  <div class="col-9">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="newLeaveRequest attend col-10">
+                                <p class="attend-p text-center font-weight-bold">New Overtime Request</p>
+                                <p class="font-weight-bold text-left text-success mb-4 pl-3">Fill Out The Form for a new overtime request</p>
+                                <form class="pl-5 pr-5">
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="from" class="text-primary font-weight-bold">Request Date:</label><br>
+                                        <input type="date" id="" name="from" class="form-control">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="from" class="text-primary font-weight-bold">Overtime type:</label></br>
+                                        <select class="custom-select">
+                                            <option value="" selected>Select</option>
+                                            <option value="">Absence</option>
+                                            <option value="">Annual Vacation</option>
+                                            <option value="">Death Vacation</option>
+                                            <option value="">Exams Vacation</option>
+                                            <option value="">Mirrage Vacation</option>
+                                            <option value="">New born Leave</option>
+
+                                        </select>
+                                      </div>
+                                   
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="from" class="text-primary font-weight-bold">Start Date:</label><br>
+                                          <input type="date" id="" name="from" class="form-control">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="from" class="text-primary font-weight-bold">End type:</label></br>
+                                          <input type="date" id="" name="from" class="form-control">
+                                        </div>
+                                     
+                                      </div>
+
+                                      <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="from" class="text-primary font-weight-bold">Start Time:</label><br>
+                                          <div class="row">
+                                            <input type="number" id="" name="from" class="form-control col-2 num">
+                                            <select class="custom-select col-5"> 
+                                                <option value="">PM</option>
+                                                <option value="">AM</option>
+                                            </select>
+
+                                          </div>
+                                          
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="from" class="text-primary font-weight-bold">End Time:</label></br>
+                                          <div class="row">
+                                            <input type="number" id="" name="from" class="form-control col-2 num">
+                                            <select class="custom-select col-5"> 
+                                                <option value="">PM</option>
+                                                <option value="">AM</option>
+                                            </select>
+
+                                          </div>
+                                        </div>
+                                     
+                                      </div>
+                                    
+                                      <div class="form-row  mt-4">
+                                        <div class="form-group col-md-6">
+                                          <label for="from" class="text-primary font-weight-bold">Reason Of Overtime</label><br>
+                                          <input type="text" id="" name="from" class="form-control">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="from" class="text-primary font-weight-bold">Department</label></br>
+                                          <select class="custom-select col-5"> 
+                                            <option value="">Sale</option>
+                                            <option value="">kg</option>
+                                        </select>
+                                        </div>
+                                       
+                                      </div>
+                                    
+                                      <div class="form-row mt-2">
+                                        <div class="form-group col-md-4">
+                                          <label for="from" class="text-success  font-weight-bold">Overtime Hours:</label>
+                                          <span class="">9 Hours</span>
+                                        </div>
+                                      
+                                      </div>
+                                      <div class="form-row mt-2 text-center">
+                                        <div class="form-group col-md-4">
+                                          <a href="newOvertimeRequestConfirmation.html" class="btn btn-primary">Send</a>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <button class="btn btn-primary">Cancel</button>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <button class="btn btn-primary">Clear</button>
+                                          </div>
+                                      </div>
+
+                                      
+                                
+                                  </form>
+                            </div>
+                            <div class="col-1"></div>
+                      </div>
+                     
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+          <!-- Script For using BootStrap 4 -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+          <!-- FontOsome Iclude -->
+          <script src="../Scripts/all.min.js"></script>
+    </body>
+</html>
