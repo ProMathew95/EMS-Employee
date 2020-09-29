@@ -30,6 +30,7 @@ a.active
 }
 .user-img{
     padding-top: 50px;
+    text-align: center;
 }
 .col-md-8 svg:not(:root).svg-inline--fa{
     color: #565555;

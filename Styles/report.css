@@ -1,0 +1,23 @@
+.bg-light{
+    padding: 10px;
+    direction: rtl;
+}
+.p-report{
+    color: #fff;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    font-size: 24px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.c-name{
+    font-size: 25px;
+}
+img{
+    width:100px
+}
+table{
+    width: 100%;
+}
