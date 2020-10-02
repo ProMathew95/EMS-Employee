@@ -21,3 +21,21 @@ img{
 table{
     width: 100%;
 }
+.bg-rw{
+    background-color: #c3bfbf;
+}
+
+table.tb-row tr{
+    line-height: 0.5;
+}
+
+.table-bordered td, .table-bordered th,
+.table-bordered ,.table thead th
+{
+    border-color: #333;
+    border-width: 2px;
+}
+
+.end-r{
+    font-size: 20px;
+}
