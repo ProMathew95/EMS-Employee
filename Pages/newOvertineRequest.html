@@ -58,31 +58,31 @@
 
                     <!-- Buttons -->
                     <div class="row">
-                        <div class="dash col-9">
-                            <div class="row">
-                                <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
-                                <p class="col-10"><a href="Dashboard.html">Dashboard</a></p>
-                            </div>
-                        </div>
-                        <div class="dash col-9">
-                            <div class="row">
-                                <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
-                                <p class="col-10"><a href="inqury.html">Inquiry</a></p>
-                            </div>
-                        </div>
-                        <div class="dash col-9">
-                            <div class="row">
-                                <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
-                                <p class="col-10"><a href="request.html">Request</a></p>
-                            </div>
-                        </div>
-                        <div class="dash col-9">
-                            <div class="row">
-                                <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
-                                <p class="col-10"><a href="setting.html">Setting</a></p>
-                            </div>
-                        </div>
-                    </div>
+                      <div class="dash col-9">
+                          <div class="row" style="text-align: center;">
+                              <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
+                              <p class="col-8"><a href="Dashboard.html">Dashboard</a></p>
+                          </div>
+                      </div>
+                      <div class="dash col-9">
+                          <div class="row" style="text-align: center;">
+                              <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
+                              <p class="col-8"><a href="inqury.html">Inquiry</a></p>
+                          </div>
+                      </div>
+                      <div class="dash col-9">
+                          <div class="row" style="text-align: center;">
+                              <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
+                              <p class="col-8"><a href="request.html">Request</a></p>
+                          </div>
+                      </div>
+                      <div class="dash col-9">
+                          <div class="row" style="text-align: center;">
+                              <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
+                              <p class="col-8"><a href="setting.html">Setting</a></p>
+                          </div>
+                      </div>
+                  </div>
 
                   </div>
                   <!-- New Leave Request Details -->
@@ -131,7 +131,7 @@
                                         <div class="form-group col-md-6">
                                           <label for="from" class="text-primary font-weight-bold">Start Time:</label><br>
                                           <div class="row">
-                                            <input type="number" id="" name="from" class="form-control col-2 num">
+                                            <input type="number" id="" name="from" class="form-control col-2 num" value="0" min="0" max="12">
                                             <select class="custom-select col-5"> 
                                                 <option value="">PM</option>
                                                 <option value="">AM</option>
@@ -143,11 +143,11 @@
                                         <div class="form-group col-md-6">
                                           <label for="from" class="text-primary font-weight-bold">End Time:</label></br>
                                           <div class="row">
-                                            <input type="number" id="" name="from" class="form-control col-2 num">
-                                            <select class="custom-select col-5"> 
+                                            <input  id="" name="from" class="form-control col-2 num" type="number" value="12" min="0" max="12">
+                                             <select class="custom-select col-5"> 
                                                 <option value="">PM</option>
                                                 <option value="">AM</option>
-                                            </select>
+                                            </select> 
 
                                           </div>
                                         </div>
