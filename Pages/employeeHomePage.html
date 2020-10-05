@@ -86,7 +86,7 @@
                   </div>
              
                   <div class="content" style="display: contents;">
-                    <div class="calendar-container">
+                    <div class="calendar-container" style="padding-top: 2%;">
                       <div class="calendar"> 
                         <div class="year-header"> 
                           <span class="left-button" id="prev"> &lang; </span> 
@@ -127,7 +127,7 @@
                               </tbody> 
                           </table>
                         </div> 
-                        <button class="button" id="add-button">Add Event</button>
+                        <button class="button" id="add-button"><i class="fas fa-plus"></i></button>
                       </div>
                     </div>
                     <div class="events-container" style="display: contents;">
@@ -138,8 +138,6 @@
                           <div class="form-container" align="center">
                             <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
                             <input class="input" type="text" id="name" maxlength="36">
-                            <label class="form-label" id="valueFromMyButton" for="count">Number of people to invite</label>
-                            <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
                             <input type="button" value="Cancel" class="button" id="cancel-button">
                             <input type="button" value="OK" class="button" id="ok-button">
                           </div>

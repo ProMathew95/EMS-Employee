@@ -129,7 +129,7 @@ function new_event(event) {
     // Event handler for cancel button
     $("#cancel-button").click(function() {
         $("#name").removeClass("error-input");
-        $("#count").removeClass("error-input");
+        //$("#count").removeClass("error-input");
         $("#dialog").hide(250);
         $(".events-container").show(250);
     });
@@ -137,19 +137,20 @@ function new_event(event) {
     $("#ok-button").unbind().click({date: event.data.date}, function() {
         var date = event.data.date;
         var name = $("#name").val().trim();
-        var count = parseInt($("#count").val().trim());
+        //var count = parseInt($("#count").val().trim());
         var day = parseInt($(".active-date").html());
         // Basic form validation
         if(name.length === 0) {
             $("#name").addClass("error-input");
         }
-        else if(isNaN(count)) {
+        /*else if(isNaN(count)) {
             $("#count").addClass("error-input");
-        }
+        }*/
         else {
             $("#dialog").hide(250);
             console.log("new event");
-            new_event_json(name, count, date, day);
+            //new_event_json(name, count, date, day);
+            new_event_json(name, date, day);
             date.setDate(day);
             init_calendar(date);
         }
@@ -157,10 +158,10 @@ function new_event(event) {
 }
 
 // Adds a json event to event_data
-function new_event_json(name, count, date, day) {
+function new_event_json(name, date, day) {
     var event = {
         "occasion": name,
-        "invited_count": count,
+        //"invited_count": count,
         "year": date.getFullYear(),
         "month": date.getMonth()+1,
         "day": day
@@ -187,14 +188,14 @@ function show_events(events, month, day) {
         for(var i=0; i<events.length; i++) {
             var event_card = $("<div class='event-card'></div>");
             var event_name = $("<div class='event-name'>"+events[i]["occasion"]+":</div>");
-            var event_count = $("<div class='event-count'>"+events[i]["invited_count"]+" Invited</div>");
+           // var event_count = $("<div class='event-count'>"+events[i]["invited_count"]+" Invited</div>");
             if(events[i]["cancelled"]===true) {
                 $(event_card).css({
                     "border-left": "10px solid #FF1744"
                 });
                 event_count = $("<div class='event-cancelled'>Cancelled</div>");
             }
-            $(event_card).append(event_name).append(event_count);
+            $(event_card).append(event_name);//.append(event_count);
             $(".events-container").append(event_card);
         }
     }
@@ -219,7 +220,7 @@ var event_data = {
     "events": [
     {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10,
@@ -227,7 +228,7 @@ var event_data = {
     },
     {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10,
@@ -235,7 +236,7 @@ var event_data = {
     },
         {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+        //"invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10,
@@ -243,14 +244,14 @@ var event_data = {
     },
     {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+        //"invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10
     },
         {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10,
@@ -258,14 +259,14 @@ var event_data = {
     },
     {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+        //"invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10
     },
         {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10,
@@ -273,14 +274,14 @@ var event_data = {
     },
     {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10
     },
         {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10,
@@ -288,14 +289,14 @@ var event_data = {
     },
     {
         "occasion": " Repeated Test Event ",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 10
     },
     {
         "occasion": " Test Event",
-        "invited_count": 120,
+       // "invited_count": 120,
         "year": 2017,
         "month": 5,
         "day": 11
