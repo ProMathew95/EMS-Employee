@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Custom styles-->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="../Styles/Index.CSS">
 
@@ -14,67 +16,71 @@
 </head>
 <body>
 
+    <div style="float: right; padding-top: 7px; padding-right: 10px;">
+        <a style="color: black;">Forget Password?</a>
+        <img style="height: 15px; width: 10px;" src="../icons/forget password lock.svg" alt="">
+     </div> 
 
+    <div class="container" style="padding-top: 10%;">  
 
-      <div class="container">   
-           
-           <div style="float: right; padding-top: 7px;">
-               <a style="color: black;">Forget Password?</a>
-               <img style="height: 15px; width: 10px;" src="../icons/forget password lock.svg" alt="">
-            </div>           
-        
-            <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
-                <div class="panel panel-info" style="border: none;" >
-                        <div class="panel-heading text-center"  style="border: none; background-color: white;" >
-                            <img src="../icons/sign in.svg" style="height: 100px; width: 100px;">
-                            <label style="font-size: 58px;font-style: normal; color: #757575;">Sign in</label>  
-                        </div>     
-    
-                        <div style="padding-top:30px" class="panel-body" style="border: none;"  >
-    
-                            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                                
-                            <form id="loginform" class="form-horizontal" role="form">
-                                        
-                                <div style="margin-bottom: 25px" class="input-group">
-                                            <span class="input-group-addon">
-                                                <img src="../icons/employee ID.svg" style="width: 24px; height: 24px;" alt="">
-                                                </span>
-                                            <input id="login-username" type="number" class="form-control" name="username" value="" placeholder="Employee ID" style="height: 50px;">                                        
-                                        </div>
-                                    
-                                <div style="margin-bottom: 25px" class="input-group">
-                                            <span class="input-group-addon"> <img src="../icons/password key.svg" style="width: 24px; height: 24px;" alt=""></span>
-                                            <input id="login-password" type="password" class="form-control" name="password" placeholder="Password" style="height: 50px;">
+        <div style="text-align: center; display: block;" style="margin-top: 10px;">     
+            <div >
+                <img src="../icons/sign in.svg" style="height: 100px; width: 100px;">
+                <label style="font-size: 58px;font-style: normal; color: #757575;">Sign in</label>  
+            </div>     
+          
+         </div>
+         
+         <div style="width: 100%; text-align: center; margin-top: 10px;">
+            <div style="width: 40%; margin: auto; ">
+            <form role="form">
+                           
+                
+                <div  style="width: 100%; margin-bottom: 25px; display: flex; border: 1px solid black;" class="input-container">
+                           
+                            <img src="../icons/employee ID.svg" style="width:10%; text-align: center; padding: 1px;" alt="">
+                            <input id="login-username" type="number" class="form-control" name="username" value="" placeholder="Employee ID" style="height: 50px; width: 100%;">                                        
+                        </div>
                     
-                               
-                                        </div>
-                                <div class="input-group">
-                                          <div class="checkbox">
-                                            <label>
-                                              <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-                                            </label>
-                                          </div>
-                                        </div>
-    
-    
-                                    <div style="margin-top:10px; margin:auto; width:50%;" class="form-group" >
-                                        <!-- Button -->
-    
-                                        <div class="col-sm-12 controls">
-                                          <a id="btn-login" href="../Pages/dashboardSelection.html" class="btn btn-primary" style="border-radius: 25px;"> Login  </a>
-                                          <a id="btn-fblogin" href="#" class="btn btn-primary" style="float: right; border-radius: 25px;">Clear</a>
-    
-                                        </div>
-                                    </div>
-                             </form>     
-                            </div>                     
-                        </div>  
+                <div style="width: 100%; margin-bottom: 25px;  display: flex; border: 1px solid black;" class="input-container">
+                           <img src="../icons/password key.svg" style="width: 10%; text-align: center; padding: 1px;" alt="">
+                            <input id="login-password" type="password" class="form-control" name="password" placeholder="Password" style="height: 50px; width: 100%;">
+                          </div>
+                <div class="input-group" style="padding-left: 30px;">
+                          <div class="checkbox">
+                            <label>
+                              <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                            </label>
+                          </div>
+                        </div>
 
 
+                    <div style="padding-top:10px; width: 100%; text-align: center;" class="form-group" >
+                        <!-- Button -->
+
+                        <!-- <div class="col-sm-12 controls"> -->
+                          <a id="btn-login" href="../Pages/dashboardSelection.html" class="btn btn-primary" style=" border-radius: 25px; width: 20%;"> Login  </a>
+                          <a id="btn-fblogin" href="#" class="btn btn-primary" style=" border-radius: 25px; width: 20%;">Clear</a>
+
+                        <!-- </div> -->
+                    </div>
+             </form>
+             </div> 
+             </div>
+
+         
+
+
+    </div>
+
+
+     
                       
             
-          
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                        <!-- FontOsome Iclude -->
+                        <script src="../Scripts/all.min.js"></script>
 </body>
 
 
