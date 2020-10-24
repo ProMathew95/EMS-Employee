@@ -27,3 +27,14 @@
 select{
     width: 30%;
 }
+
+.table td, .table th{
+    padding: 0.6rem 0.1rem 0.6rem 0.3rem;
+}
+.DSelect{
+    width: 30% !important; 
+}
+select.t-select{
+    width: 55%;
+
+}

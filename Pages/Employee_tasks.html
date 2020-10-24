@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- import FontOsome  -->
+    <link rel="stylesheet" href="../Styles/all.min.css">
+    <!-- import dashboard style -->
+    <link rel="stylesheet" href="../Styles/dashboard.css">   
+     <!--import Attendece Style  -->
+     <link rel="stylesheet" href="../Styles/attendence.css">
+     <link rel="stylesheet" href="../Styles/viewattend.css">
+     <!-- Import DataPicker -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" integrity="sha256-SMGbWcp5wJOVXYlZJyAXqoVWaE/vgFA5xfrH3i/jVw0=" crossorigin="anonymous" />
+    
+
+    <title>Employee Tasks</title>
+</head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="nav-icons">
+                <i class="fas fa-sign-out-alt" onclick="location.href ='Index.html';"> </i>
+                <i class="far fa-question-circle"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-home" onclick="location.href ='MangerHomePage.html';"></i>
+            </div>
+            
+        </nav>
+
+        <!-- Dashboard Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Emp Info -->
+                <div class="col-3 emp-info">
+                    <!-- Top user Info -->
+                    <div class="row user-section">
+                        <div class="emp-img col-md-3 ">
+                            <img src="../icons/admin.svg" alt="userImage" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="emp-detail col-md-9 ">
+                            <h6>Sultan Ahmed</h6>
+                            <p>
+                                <span><i class="far fa-calendar-alt"></i></span>
+                                <span class="edit-date">Registed on Nev, 2019</span>
+                            </p>
+                            <p>
+                                <span><i class="far fa-clock"></i></span>
+                                <span class="edit-time">12/08/20, 3:55 PM</span>
+                            </p>
+                            <p class="Online">
+                                <span class="online-mark"></span>
+                                <span class="edit-online">Online</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="row">
+                        <div class="dash col-9">
+                            <div class="row" style="text-align: center;">
+                                <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
+                                <p class="col-8"><a href="Manger_Dashboard.html">Dashboard</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row" style="text-align: center;">
+                                <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
+                                <p class="col-8"><a href="Manger_inqury.html">Inquiry</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row" style="text-align: center;">
+                                <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
+                                <p class="col-8"><a href="Manger_request.html">Request</a></p>
+                            </div>
+                        </div>
+                        <div class="dash col-9">
+                            <div class="row" style="text-align: center;">
+                                <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
+                                <p class="col-8"><a href="Manger_setting.html">Setting</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+                <!-- View Attendence -->
+                <div class="col-9 view-attend">
+                   
+                    <div class="row">
+                        <div class="attend col-12">
+                            <p class="attend-p text-center font-weight-bold">Tasks Inquiry</p>
+                           <div class="container mb-5">
+                            <div class="row p-3">
+
+                                <div class="col-md-6 my-1">
+                                    
+                                   
+                                    <div class="input-group">
+                                        <label for="inlineFormInputGroupUsername" class="mt-1 text-primary font-weight-bold">Employee ID:</label>
+                                      <div class="input-group-prepend ml-3">
+                                        <div class="input-group-text"><i class="fa fa-search"></i></div>
+                                      </div>
+    
+                                      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="084274-Khaled Ahmed">
+                                      <input type="checkbox" name="" id="" class="mt-3 ml-3"> <span class="mt-2 ml-2">All</span>
+                                    </div>
+            
+                             </div>
+                             <div class="col-md-6 my-1">
+                               
+                                <form action="">
+                                    <label for="from" class="text-primary font-weight-bold">Department:</label>
+                                    <select class="custom-select DSelect" name="" id="">
+                                        <option value="" selected>Select</option>  
+                                    </select>
+                                </form>
+
+                            </div>
+                            </div>
+                            <div class="row p-3">
+                                <div class="col-md-3 mt-2">
+                               
+                                    <form action="">
+                                        <label for="from" class="text-primary font-weight-bold">Task Type:</label><br>
+                                        <select class="custom-select" name="" id="">
+                                            <option value="" selected>Select</option>
+                                            <option value="">All</option>  
+                                            <option value="">Business Trip</option>  
+                                            <option value="">Training</option> 
+                                            <option value="">Office Work</option>    
+                                        </select>
+                                    </form>
+
+                                </div>
+                                <div class="col-md-3 mt-2">
+                               
+                                    <form action="">
+                                        <label for="from" class="text-primary font-weight-bold">Task Status:</label><br>
+                                        <select class="custom-select" name="" id="">
+                                            <option value="" selected>Select</option>
+                                            <option value="">All</option>  
+                                            <option value="">In progress</option>  
+                                            <option value="">Inactive</option> 
+                                            <option value="">Complete</option>  
+                                        </select>
+                                    </form>
+
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <form action="">
+                                        <label for="to" class="text-primary font-weight-bold">From:</label><br>
+                                        <input type="date" id="" name="to">
+                                    </form>
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <form action="">
+                                        <label for="to" class="text-primary font-weight-bold">To:</label><br>
+                                        <input type="date" id="" name="to">
+                                    </form>
+                                </div>
+                               
+                            </div>
+                           
+                           </div>
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <button class="btn font-weight-bold text-center edit-ok mt-4">View</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn font-weight-bold text-center edit-ok mt-4">Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                        </div>
+                      
+                    </div>
+                    <!-- Below Table -->
+                    <div class="table-responsive mt-4">
+                        <table class="table">
+
+                            <thead>
+                                <tr class="edit-table-bg">
+                                    <th scope="col">Employee Id</th>
+                                    <th scope="col">Employee Name</th>
+                                    <th scope="col">Department</th>
+                                    <th scope="col">Task Type</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Days</th>
+                                    <th scope="col">Task Status</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1234</td>
+                                    <td>Khaled Ahmed</td>
+                                    <td>Accounting</td>
+                                    <td>Business Trip</td>
+                                    <td>01-02-2018</td>
+                                    <td>05-02-2018</td>
+                                    <td>5</td>
+                                    <td>
+                                        <select class="t-select">
+                                            <option selected> Select</option>
+                                            <option value="">All</option>  
+                                            <option value="">In progress</option>  
+                                            <option value="">Inactive</option> 
+                                            <option value="">Complete</option>  
+                                        </select>
+                                    </td>
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+          <!-- Script For using BootStrap 4 -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+          <!-- FontOsome Iclude -->
+          <script src="../Scripts/all.min.js"></script>
+          <script src="../Scripts/viewAttend.js"></script>
+    </body>
+</html>

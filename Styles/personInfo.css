@@ -63,3 +63,7 @@ a.active
 .container-fluid,.container{
     padding-left: 0;
 }
+
+.custom-select{
+    width:50%;
+}

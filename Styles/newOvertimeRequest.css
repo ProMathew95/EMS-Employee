@@ -1,3 +1,11 @@
 .num{
     margin-left: 10px;
 }
+.e-taskSearch{
+    margin-left: -20px;
+}
+
+textarea{
+    width: 90%;
+    border: none;
+}

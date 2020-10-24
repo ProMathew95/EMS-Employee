@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- import FontOsome  -->
+    <link rel="stylesheet" href="../Styles/all.min.css">
+    <!-- import dashboard style -->
+    <link rel="stylesheet" href="../Styles/dashboard.css">
+    <!--import PersonInfo Style  -->
+    <link rel="stylesheet" href="../Styles/personInfo.css">
+    
+
+    <title>Employee Data View</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="nav-icons">
+            <i class="fas fa-sign-out-alt" onclick="location.href ='Index.html';"> </i>
+            <i class="far fa-question-circle"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-home" onclick="location.href ='MangerHomePage.html';"></i>
+        </div>
+
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Emp Info -->
+            <div class="col-3 emp-info">
+                <!-- Top user Info -->
+                <div class="row user-section">
+                    <div class="emp-img col-md-3 ">
+                        <img src="../icons/admin.svg" alt="userImage" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="emp-detail col-md-9 ">
+                        <h6>Sultan Ahmed</h6>
+                        <p>
+                            <span><i class="far fa-calendar-alt"></i></span>
+                            <span class="edit-date">Registed on Nev, 2019</span>
+                        </p>
+                        <p>
+                            <span><i class="far fa-clock"></i></span>
+                            <span class="edit-time">12/08/20, 3:55 PM</span>
+                        </p>
+                        <p class="Online">
+                            <span class="online-mark"></span>
+                            <span class="edit-online">Online</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="row">
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
+                            <p class="col-8"><a href="Manger_Dashboard.html">Dashboard</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
+                            <p class="col-8"><a href="Manger_inqury.html">Inquiry</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
+                            <p class="col-8"><a href="Manger_request.html">Request</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
+                            <p class="col-8"><a href="Manger_setting.html">Setting</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- PersonInfo Details -->
+            <div class="col-9 personInfo">
+                <div id="home" class="container tab-pane active">
+                    <div class="container emp-profile p-4">
+                        <p class="text-success font-weight-bold">Search by Employee ID or Select From Department and Employees</p>
+                        <div class="row mb-3">
+                            <div class="col-md-6 my-1">
+                                
+                               
+                                <div class="input-group">
+                                    <label for="inlineFormInputGroupUsername" class="mt-1 text-primary font-weight-bold">Employee ID:</label>
+                                  <div class="input-group-prepend ml-3">
+                                    <div class="input-group-text"><i class="fa fa-search"></i></div>
+                                  </div>
+
+                                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="084274-Sultan Ahmed">
+                                </div>
+        
+                        </div>
+                        </div>
+                           
+                        <div class="row mb-5">
+                            <div class="col-md-6 mt-2">
+                                <form action="">
+                                    <label for="to" class="text-primary font-weight-bold">Department:</label>
+                                    <select class="custom-select" name="" id="">
+                                        <option value="" selected>Sale</option>  
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <form action="">
+                                    <label for="to" class="text-primary font-weight-bold">Employees:</label>
+                                    <select class="custom-select" name="" id="">
+                                        <option value="" selected>084274-Sultan Ahmed</option>
+                                        
+                                    </select>
+                                </form>
+                            </div>
+                           
+                        </div>
+                       
+                        <form method="post">
+                            <div class="row">
+                              
+                                <div class="col-md-6">
+                                    <div class="tab-content profile-tab" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Job ID Number</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>084274</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Full Name</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Sultan Ahmed Abdullah Mohamed</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Department</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Spare Parts</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Division</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Sales</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Position</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Orders Coordinator</p>
+                                                </div>
+                                            </div>
+                                         
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Job Description</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Tracing local and global Orders</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Class</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Employee</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Hiring Date</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>01-01-2019</p>
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Education</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Bachelor</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Major</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Marketing</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Experience</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>15</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Monthly Salary</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>SR 15,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Contract End Date</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>01-01-2021</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tab-content profile-tab" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Nationality</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Saudi</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Gender</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Male</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Date Of Birth</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p><i class="fas fa-birthday-cake"></i>05-05-2020</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Phone</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p><i class="fas fa-phone-alt"></i>055-555-5555</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Work Email</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p><i class="far fa-envelope"></i>mail@gmail.com</p>
+                                                </div>
+                                            </div>
+                                          
+                                          
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Branch</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Alhamra</p>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>City</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Riyadh</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>office Telephone</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p><i class="fas fa-phone-alt"></i>021-255-5555</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Extenstion</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>256</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                    <label>Direct Manger</label>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>Fahd Khaldi</p>
+                                                </div>
+                                            </div>
+                                           
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+             
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Script For using BootStrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- FontOsome Iclude -->
+    <script src="../Scripts/all.min.js"></script>
+</body>
+
+</html>
