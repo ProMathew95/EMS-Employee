@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- import FontOsome  -->
+    <link rel="stylesheet" href="../Styles/all.min.css">
+    <!-- import dashboard style -->
+    <link rel="stylesheet" href="../Styles/dashboard.css">
+    <!--import PersonInfo Style  -->
+    <link rel="stylesheet" href="../Styles/personInfo.css">
+    
+
+    <title>Personal Info</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="nav-icons">
+            <i class="fas fa-sign-out-alt" onclick="location.href ='Index.html';"> </i>
+            <i class="far fa-question-circle"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-home" onclick="location.href ='employeeHomePage.html';"></i>
+        </div>
+
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Emp Info -->
+            <div class="col-3 emp-info">
+                <!-- Top user Info -->
+                <div class="row user-section">
+                    <div class="emp-img col-md-3 ">
+                        <img src="../icons/admin.svg" alt="userImage" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="emp-detail col-md-9 ">
+                        <h6>Sultan Ahmed</h6>
+                        <p>
+                            <span><i class="far fa-calendar-alt"></i></span>
+                            <span class="edit-date">Registed on Nev, 2019</span>
+                        </p>
+                        <p>
+                            <span><i class="far fa-clock"></i></span>
+                            <span class="edit-time">12/08/20, 3:55 PM</span>
+                        </p>
+                        <p class="Online">
+                            <span class="online-mark"></span>
+                            <span class="edit-online">Online</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="row">
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
+                            <p class="col-8"><a href="Dashboard.html">Dashboard</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
+                            <p class="col-8"><a href="inqury.html">Inquiry</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
+                            <p class="col-8"><a href="request.html">Request</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
+                            <p class="col-8"><a href="setting.html">Setting</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- PersonInfo Details -->
+            <div class="col-9 personInfo">
+
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">Basic Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#job_details_Menu">Job Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#experience_Menu">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#education_Menu">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#insurance_Menu">Insurance</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                        <div class="container emp-profile">
+                            <form method="post">
+                                <div class="row">
+                                    <div class="col-md-4 user-img">
+                                        <img src="../icons/admin.svg" class="img-fluid" alt="" srcset="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="tab-content profile-tab" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px; margin-bottom: 20px;">
+                                                        <label style="color: green;">Search by job ID number</label>
+                                                    </div>
+
+                                                    <div class="col-md-6" style="font-size: 14px;">
+                                                        <form>
+                                                            <input type="text" placeholder="Search.." name="search">
+                                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                                          </form>
+                                                        
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Full Name</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">ID Number</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="number" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">ID Type</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <form action="">
+                                                            <select name="" id="">
+                                                                <option value="">National</option>    
+                                                                <option value="">Passport</option>    
+                                                            </select>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Birh Date</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="date" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                              
+                                             
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Nationality</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Gender</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="radio" name="gender" value="male"> Male
+                                                        <input type="radio" name="gender" value="female"> Female
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Marital Status</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <form action="">
+                                                            <select name="" id="">
+                                                                <option value="">Single</option>    
+                                                                <option value="">Married</option>    
+                                                                <option value="">Divorced</option>  
+                                                                <option value="">Widower</option>  
+                                                            </select>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Phone</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="tel" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Work Email</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="email" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Country</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Province</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">City</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Nighbourhood</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="height: 25px;">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label style="color: #41a7e2;">Street</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="height: 25px;">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-12" style="margin-top: 30px;">
+                                                    <div class="row">
+                                                       <div class="col-10"></div>
+                                                       <div class="col-10">
+                                                           <input type="button" value="New" class="rounded-pill btn btn-primary">
+                                                           <input type="button" value="Save" class="rounded-pill btn btn-primary">
+                                                           <input type="button" value="Edit" class="rounded-pill btn btn-primary">
+                                                           <input type="button" value="Clear" class="rounded-pill btn btn-primary">
+                                                       </div>
+                                                   </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--job details  -->
+                    <div id="job_details_Menu" class="container tab-pane fade"><br>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-md-8">
+                                <div class="tab-content profile-tab" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Employee ID Number</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>123456</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Company</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>Alharamin united Company</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Department</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>Sales</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Division</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>Purchases</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Position</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>Coordinator</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Job Description</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>Ordering and tracking local and international orders</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Class</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>Employee</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Hiring Date</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>26/10/2020 <span class="view-HD text-center ml-5">View</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Contract Type</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>Family</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Contract End Date</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p>25/10/2025</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       <!-- Experience -->
+                       <div id="experience_Menu" class="container-fluid tab-pane fade">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <thead>
+                                    <tr class="bg-primary">
+                                        <th scope="col">Qualification</th>
+                                        <th scope="col">Degree</th>
+                                        <th scope="col">Major</th>
+                                        <th scope="col">Institute</th>
+                                        <th scope="col">Gradution Year</th>
+                                        <th scope="col">Document</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>High Education</td>
+                                        <td>Master</td>
+                                        <td>Accounting</td>
+                                        <td>King Abdel Aziz university</td>
+                                        <td>2019</td>
+                                        <td class="text-center view-tb">View
+                                        <td>
+                                    </tr>
+                                    <tr>
+                                        <td>High Education</td>
+                                        <td>Bachelar</td>
+                                        <td>Mangement</td>
+                                        <td>Saudi elecronic university</td>
+                                        <td>2013</td>
+                                        <td class="text-center view-tb"> View</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <!-- Education -->
+                    <div id="education_Menu" class="container-fluid tab-pane fade">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <thead>
+                                    <tr class="bg-primary">
+                                        <th scope="col">Qualification</th>
+                                        <th scope="col">Degree</th>
+                                        <th scope="col">Major</th>
+                                        <th scope="col">Institute</th>
+                                        <th scope="col">Gradution Year</th>
+                                        <th scope="col">Document</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>High Education</td>
+                                        <td>Master</td>
+                                        <td>Accounting</td>
+                                        <td>King Abdel Aziz university</td>
+                                        <td>2019</td>
+                                        <td class="text-center view-tb">View
+                                        <td>
+                                    </tr>
+                                    <tr>
+                                        <td>High Education</td>
+                                        <td>Bachelar</td>
+                                        <td>Mangement</td>
+                                        <td>Saudi elecronic university</td>
+                                        <td>2013</td>
+                                        <td class="text-center view-tb"> View</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Insurance -->
+                    <div id="insurance_Menu" class="container tab-pane fade">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <thead>
+                                    <tr class="bg-primary">
+                                        <th scope="col">Insurance Number</th>
+                                        <th scope="col">Insurance Company</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Class</th>
+                                        <th scope="col">Issue Date</th>
+                                        <th scope="col">Expire Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>123456</td>
+                                        <td>Bupa</td>
+                                        <td>Health</td>
+                                        <td>Gold</td>
+                                        <td>26-10-2020</td>
+                                        <td>26-10-2021
+                                        <td>
+                                    </tr>
+                                    <tr>
+                                        <td>9874652</td>
+                                        <td>Altawania</td>
+                                        <td>Social Security</td>
+                                        <td>None</td>
+                                        <td>02-03-2004</td>
+                                        <td> 02-03-2005</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Script For using BootStrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- FontOsome Iclude -->
+    <script src="../Scripts/all.min.js"></script>
+</body>
+
+</html>
