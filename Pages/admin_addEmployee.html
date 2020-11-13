@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- import FontOsome  -->
+    <link rel="stylesheet" href="../Styles/all.min.css">
+    <!-- import dashboard style -->
+    <link rel="stylesheet" href="../Styles/dashboard.css">
+    <!--import PersonInfo Style  -->
+    <link rel="stylesheet" href="../Styles/personInfo.css">
+    <!--import Attendece Style  -->
+    <link rel="stylesheet" href="../Styles/attendence.css">
+    <link rel="stylesheet" href="../Styles/viewattend.css">
+
+    <title>Add Employee</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="nav-icons">
+            <i class="fas fa-sign-out-alt" onclick="location.href ='Index.html';"> </i>
+            <i class="far fa-question-circle"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-home" onclick="location.href ='adminhomePage.html';"></i>
+        </div>
+
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Emp Info -->
+            <div class="col-3 emp-info">
+                <!-- Top user Info -->
+                <div class="row user-section">
+                    <div class="emp-img col-md-3 ">
+                        <img src="../icons/admin.svg" alt="userImage" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="emp-detail col-md-9 ">
+                        <h6>Sultan Ahmed</h6>
+                        <p>
+                            <span><i class="far fa-calendar-alt"></i></span>
+                            <span class="edit-date">Registed on Nev, 2019</span>
+                        </p>
+                        <p>
+                            <span><i class="far fa-clock"></i></span>
+                            <span class="edit-time">12/08/20, 3:55 PM</span>
+                        </p>
+                        <p class="Online">
+                            <span class="online-mark"></span>
+                            <span class="edit-online">Online</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="row">
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-tachometer-alt"></i></p>
+                            <p class="col-8"><a href="adminDashboard.html">Dashboard</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-database"></i></i></p>
+                            <p class="col-8"><a href="admin_inquiry.html">Inquiry</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-arrows-alt-h"></i></p>
+                            <p class="col-8"><a href="admin_request.html">Request</a></p>
+                        </div>
+                    </div>
+                    <div class="dash col-9">
+                        <div class="row" style="text-align: center;">
+                            <p class="col-2 btn-setting"><i class="fas fa-cog"></i></p>
+                            <p class="col-8"><a href="admin_setting.html">Setting</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- PersonInfo Details -->
+            <div class="col-9 personInfo">
+
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">Basic Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">Job Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu4">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu2">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu3">Insurance</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                        <div class="container emp-profile">
+                            <form method="post">
+                                <div class="row">
+                                    <div class="col-md-4 user-img">
+                                        <img src="../icons/admin.svg" class="img-fluid" alt="" srcset=""><br>
+                                        <button class="btn btn-primary mt-4">Upload a Photo</button>
+                                    </div>
+                                    <div class="col-md-8 mt-4">
+                                        <div class="tab-content profile-tab" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <div class="row mb-4">
+                                                    <div class="col-md-4 font-weight-bold">
+                                                        <label class="text-success  font-weight-bold">Search by job Id Numer</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="search" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button class="btn btn-primary">Search</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Full Name</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>ID Number</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="number" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>ID Type</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <select name="" id="" class="custom-select">
+                                                            <option selected>National</option>
+                                                            <option selected>Passport</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Birhday</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Nationality</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="number" class="form-control">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Gender</label>
+                                                    </div>
+                                                    <div class="col-md-5" >
+                                                        <div class="form-check d-inline">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                            <label class="form-check-label" for="exampleRadios1">Male</label>
+                                                          </div>
+                                                          <div class="form-check d-inline">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                            <label class="form-check-label" for="exampleRadios2">
+                                                             Female
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Marital Status</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <select name="" id="" class="custom-select">
+                                                            <option selected>Single</option>
+                                                            <option selected>Married</option>
+                                                            <option selected>Divorced</option>
+                                                            <option selected>Widowed</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Phone</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Work Email</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="email" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Country</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Province</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>City</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Nighbourhood</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-md-4 font-weight-bold" style="font-size: 14px;">
+                                                        <label>Street</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                            <div class="row mt-5 mb-5">
+                                                <div class="col-3"><button class="btn btn-primary">New</div>
+                                                <div class="col-3"><button class="btn btn-primary">Save</div>
+                                                <div class="col-3"><button class="btn btn-primary">Edit</div>
+                                                <div class="col-3"><button class="btn btn-primary">Clear</div>
+                                            </div>
+                                    
+                                    </div>
+                                   
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+             
+                    
+                    <!--job details  -->
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-md-8">
+                                <div class="tab-content profile-tab" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Employee ID Number</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Company</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Department</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                               <select class="custom-select">
+                                                   <option>IT</option>
+                                                   <option>After Sale</option>
+                                                   <option>Facility</option>
+                                                   <option>Finance</option>
+                                                   <option>Government Sales</option>
+                                                   <option>Fleet Sales</option>
+                                                   <option>HR</option>
+                                                   <option>Logistics</option>
+                                                   <option>Marketing</option>
+                                                   <option>Retail Sales</option>
+                                                   <option>Service</option>
+                                               </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Division</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <select class="custom-select">
+                                                    <option>Parts</option>
+                                                    <option>Quick Service</option>
+                                                    <option>Technical Support</option>
+                                                    <option>Employment</option>
+                                                    <option>Customer Care</option>
+                                                    <option>Purchases</option>
+                                                 
+                                                </select>
+                                             </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Position</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                              <input type="text" name="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Job Description</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                              <input type="text" name="" id="" class="form-control">
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Class</label>
+                                            </div>
+                                         
+                                            <div class="col-md-5">
+                                                <select class="custom-select">
+                                                    <option>Admin</option>
+                                                    <option>Manger</option>
+                                                    <option>Employee</option>
+                                                </select>
+                                                </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Hiring Date</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                               <input type="date" name="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Contract Type</label>
+                                            </div>
+                                            <div class="col-md-5" >
+                                                <div class="form-check d-inline">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="exampleRadios1">Single</label>
+                                                  </div>
+                                                  <div class="form-check d-inline">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                     Family
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Monthly Salary</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="text" name="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-4 font-weight-bold">
+                                                <label>Contract End Date</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="date" name="" id="" class="form-control">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-4"><button class="btn btn-primary">Save</div>
+                                        <div class="col-4"><button class="btn btn-primary">Edit</div>
+                                        <div class="col-4"><button class="btn btn-primary">Clear</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education -->
+                    <div id="menu2" class="container-fluid tab-pane fade">
+                        <div class="container">
+                            <div class="row ml-0">
+                                <div class="attend col-12">
+                                    <p class="attend-p text-center font-weight-bold bg-primary">Add Education</p> 
+                                    <div class="container pl-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Qualification:</label>
+                                                    <select class="custom-select col-6">
+                                                        <option>Secondary Education</option>
+                                                        <option>Intermediate Education</option>
+                                                        <option>High Education</option>
+                                                    </select>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Degree:</label>
+                                                    <select class="custom-select col-6">
+                                                        <option>Certificate</option>
+                                                        <option>Diploma</option>
+                                                        <option>Bachelor</option>
+                                                        <option>Master</option>
+                                                        <option>Doctorate</option>
+                                                    </select>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Major:</label>
+                                                    <input type="text" name="" id="" class="form-control col-6">
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Institute :</label>
+                                                    <input type="text" name="" id="" class="form-control col-6">
+                                                    
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Division :</label>
+                                                    <input type="number" name="" id="" class="form-control col-6">
+                                                  
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Document :</label>
+                                                    <input type="file" name="" id="" class="form-control col-6">
+                                                </div>
+                                             
+                                        </div>
+                                       
+                                        </div>   
+                                        <div class="row mt-5 mb-5 text-center">
+                                           
+                                            <div class="col-4"><button class="btn btn-primary">Save</div>
+                                            <div class="col-4"><button class="btn btn-primary">Edit</div>
+                                            <div class="col-4"><button class="btn btn-primary">Clear</div>
+                                        </div>
+                                
+                                   </div>
+                          
+                              
+                            </div>
+                          </div>
+                            <!-- Below Table -->
+                            <div class="table-responsive">
+                                <table class="table">
+    
+                                    <thead>
+                                        <tr class="bg-primary">
+                                            <th scope="col">Qualification</th>
+                                            <th scope="col">Degree</th>
+                                            <th scope="col">Major</th>
+                                            <th scope="col">Institute</th>
+                                            <th scope="col">Graduation Year</th>
+                                            <th scope="col">Document</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                  <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    <td class="text-center view-tb">View</td>
+                                  </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- Insurance -->
+                    <div id="menu3" class="container tab-pane fade">
+                        <div class="container">
+                            <div class="row ml-0">
+                                <div class="attend col-12">
+                                    <p class="attend-p text-center font-weight-bold bg-primary">Add Insurance</p> 
+                                    <div class="container pl-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-4">Insurance Number:</label>
+                                                    <input type="text" name="" id="" class="form-control col-6">
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-4 p-0">Insurance Company:</label>
+                                                    <input type="text" name="" id="" class="form-control col-6">
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-4">Type:</label>
+                                                    <select class="custom-select col-6">
+                                                        <option>Health</option>
+                                                        <option>Social Security</option>
+                                                    </select>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-4">Class:</label>
+                                                    <select class="custom-select col-6">
+                                                        <option>Platinum</option>
+                                                        <option>Gold</option>
+                                                        <option>Silver</option>
+                                                        <option>Bronze</option>
+                                                        <option>None</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Issue Date :</label>
+                                                    <input type="date" name="" id="" class="form-control col-6">
+                                                    
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <label for="" class="col-3">Expire Date :</label>
+                                                    <input type="date" name="" id="" class="form-control col-6">
+                                                  
+                                                </div>
+                                        </div>
+                                       
+                                        </div>   
+                                        <div class="row mt-5 mb-5 text-center">
+                                           
+                                            <div class="col-4"><button class="btn btn-primary">Save</div>
+                                            <div class="col-4"><button class="btn btn-primary">Edit</div>
+                                            <div class="col-4"><button class="btn btn-primary">Clear</div>
+                                        </div>
+                                
+                                   </div>
+                          
+                              
+                            </div>
+                          </div>
+                            <!-- Below Table -->
+                            <div class="table-responsive">
+                                <table class="table">
+    
+                                    <thead>
+                                        <tr class="bg-primary">
+                                            <th scope="col">Insurance Number</th>
+                                            <th scope="col">Insurance Company</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Class</th>
+                                            <th scope="col">Issue Date</th>
+                                            <th scope="col">Expire Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                             
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu4" class="container tab-pane fade">
+                      <div class="container">
+                        <div class="row ml-0">
+                            <div class="attend col-12">
+                                <p class="attend-p text-center font-weight-bold bg-primary">Add Experience</p> 
+                                <div class="container pl-4">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="row mb-2">
+                                                <label for="" class="col-3">Start Date:</label>
+                                                <input type="date" name="" id="" class="form-control col-6">
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="" class="col-3">End Date:</label>
+                                                <input type="date" name="" id="" class="form-control col-6">
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="" class="col-3">Years:</label>
+                                                <input type="number" name="" id="" class="form-control col-6">
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="" class="col-3">Company:</label>
+                                                <input type="text" name="" id="" class="form-control col-6">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row mb-2">
+                                                <label for="" class="col-3">Department :</label>
+                                                <select class="custom-select col-6">
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="" class="col-3">Division :</label>
+                                                <select class="custom-select col-6">
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="" class="col-3">Position :</label>
+                                                <input type="number" name="" id="" class="form-control col-6">
+                                            </div>
+                                         
+                                    </div>
+                                   
+                                    </div>   
+                                    <div class="row mt-5 mb-5 text-center">
+                                       
+                                        <div class="col-4"><button class="btn btn-primary">Save</div>
+                                        <div class="col-4"><button class="btn btn-primary">Edit</div>
+                                        <div class="col-4"><button class="btn btn-primary">Clear</div>
+                                    </div>
+                            
+                               </div>
+                      
+                          
+                        </div>
+                      </div>
+                        <!-- Below Table -->
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <thead>
+                                    <tr class="bg-primary">
+                                        <th scope="col">Sart Date</th>
+                                        <th scope="col">End Date</th>
+                                        <th scope="col">Years</th>
+                                        <th scope="col">Company</th>
+                                        <th scope="col">Department</th>
+                                        <th scope="col">Division</th>
+                                        <th scope="col">Position</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                              
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Script For using BootStrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- FontOsome Iclude -->
+    <script src="../Scripts/all.min.js"></script>
+    <script src="../Scripts/Index.js"></script>
+</body>
+
+</html>
